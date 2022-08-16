@@ -4,7 +4,7 @@
 
 ### The task description
 
-Create a rest API to manage all the users in the app. Use nodejs `express` library for this. 
+Create a rest API to manage all the users in the app. Use Laravel library for this. 
 
 The API routes should do the following actions:
  - get all users
