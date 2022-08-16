@@ -1,10 +1,10 @@
-# PHP Laravel
+# PHP Laravel + MySql
 
 ## Homework
 
 ### The task description
 
-Create a rest API to manage all the users in the app. Use Laravel framework for this. 
+Create a rest API to manage all the users in the app. Use nodejs `express` library for this. 
 
 The API routes should do the following actions:
  - get all users
@@ -16,10 +16,14 @@ The API routes should do the following actions:
  
 Use GET, POST, PUT, PATCH, DELETE methods to do this.
 
-The initial user data take from `users.json` file
-After any changes - update this file. Every API request should take a new data from json file.
+The initial user data take from `users.json` file. You should be able to edit all fields in json file apart from `index` and `id`.
+Instead of working with a files - create a users table in SQL database.
 
-You shpould be able to edit all fields in json file apart from `index` and `id`.
+To do this use Laravel Eloquent ORM (the best way) or Laravel Query Builder.
+- Create a new table by using migrations.
+- Add the users data from json file to database by using seeders.
+- Create a user model in a project
+- Use user model in API route handlers to work with a user data.
 
 Extra tasks:
  - Add `cors` middleware
